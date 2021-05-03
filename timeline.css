@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  background-image: url(./1000-5626x3635.jpg);
+}
+
+.timeline-head {
+  background-color: grey;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 472px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #00001e, 1px 2px 1px #00001e, 1px 3px 1px #00001e,
+    1px 4px 1px #00001e, 1px 5px 1px #00001e, 1px 6px 1px #00001e,
+    1px 7px 1px #00001e, 1px 8px 1px #00001e;
+}
+
+.timeline-container {
+  padding: 10%;
+  display: grid;
+  grid-template-columns: 1fr 10% 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.text-wrapper {
+  padding: 10px 40px;
+  position: relative;
+  background: rgba(64, 63, 63, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50%;
+  box-sizing: border-box;
+  margin: 100px 0;
+  justify-content: space-evenly;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.text {
+  padding: 15px 15px 17px;
+  border-radius: 4px;
+}
+.timeline-line {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  justify-self: center;
+  padding: 5px;
+  background: rgba(64, 63, 63, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.item1 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+.item2 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.item3 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.item4 {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.timeline-item {
+  padding: 10px;
+  align-self: center;
+  justify-self: center;
+  margin: 10px;
+  background: rgba(64, 63, 63, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
